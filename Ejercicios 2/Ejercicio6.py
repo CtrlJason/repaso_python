@@ -19,3 +19,20 @@ else:
         print("Perteneces al grupo B Femenino")
     if sexo == 2:
         print("Perteneces al grupo B Masculino")
+
+
+nombre = input("¿Como te llamas?")
+genero = input(
+    "¿Cual es tu sexo? escribe M si eres mujer o H si eres hombre: ")
+
+if genero == "M":
+    if nombre.lower() < "m":
+        grupo = "A"
+    else:
+        grupo = "B"
+else:
+    if nombre.lower() < "n":
+        grupo = "A"
+    else:
+        grupo = "B"
+print(f"Tu grupo es {genero}")
