@@ -1,7 +1,7 @@
 fecha = {
-    "dd": 15,
-    "mm": 3,
-    "aaaa": 2001
+    "dd": "15",
+    "mm": "03",
+    "aaaa": "2001"
 }
 
 dia = (input("Cual es la fecha del dia de hoy? escribe el dia en numeros: "))
