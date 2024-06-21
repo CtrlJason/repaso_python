@@ -8,6 +8,7 @@ nombres = [["Yeison", "Carlos", "Juan", "Laura"]]
 # Recorre todos los indices y los imprime
 for nombre in nombres:
     print(nombre)
+
 numeros = [[10, 15, 990, 12358, 32125603, 1]]
 
 for numero in numeros:
