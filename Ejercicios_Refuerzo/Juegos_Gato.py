@@ -1,6 +1,6 @@
 tablero = [["#", "#", "#"], ["#", "#", "#"], ["#", "#", "#"]]
 
-for fila1 in tablero[0]:
+for fila1 in tablero:
     print(fila1)
 fin = False
 while fin != True:
@@ -24,7 +24,7 @@ while fin != True:
         tablero[2][1] = "X"
     elif fila_user == 9:
         tablero[2][2] = "X"
-    for i in tablero[0]:
+    for i in tablero:
         print(fila1)
     ######  JUGADOR 2  ######
     fila_posicion = int(input("Jugador 2: Escribe la posicion del 1 al 9: "))
