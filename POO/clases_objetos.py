@@ -1,16 +1,24 @@
 class Celular:
+    # Metodo construcctor se utiliza para crear atributos, para crearlo se define agrega un metodo especial con el nombre __init__
     def __init__(self, marca, modelo, camara): #self hace referencia a un objeto instanciado de la clase - Seguido le ponemos los atributos que queremos para los objetos
         # La funcion se ejecuta automaticamente cuando creamos un objeto instanciado de la clase
         self.marca = marca
         self.modelo = modelo
         self.camara = camara
+        
+    def llamar_on(self): # Methodo que realiza la funcion de ejecutar una llamada
+        print(f"Ejecutando llamada desde un: {self.marca, self.modelo}") # Para realizar un llamado al construcror siempre se debe referenciar con self para que el methodo se llame asi mismo
+    def llamar_off(self): # Methodo que realiza la funcion de desactivar una llamada
+        print(f"Desactivando llamada del : {self.marca, self.modelo}")   
+        
 celular1 = Celular(modelo= "S23", marca="Samsung", camara= "48MP") #Forma 1 de asignar los atributos: nombre del atributo = nombre del atributo - El orden se puede cambiar
 celular2 = Celular("Iphone", "15 Pro max", "46MP")#Forma 2 de asignar atributos: se pone directamente el nombre del atributo y python lo asigna al espacio automaticamente
 celular3 = Celular("Huawei", "P20 Lite", "42MP")
 celular4 = Celular("Iphone", "11", "22MP")
 celulares_bodega = [celular1, celular2, celular3, celular4]
 
-print(len(celulares_bodega))
+celular1.llamar_on()
+celular2.llamar_off()
 
 
 

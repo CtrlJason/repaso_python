@@ -1,0 +1,14 @@
+Estudiantes registrados en INTER:
+<-------------------------------------->
+Estudiante: Yeison Mosquera
+ Edad: 23 Años
+ Semestre: 4
+<-------------------------------------->
+Estudiante: Laura Soprano
+ Edad: 27 Años
+ Semestre: 2
+<-------------------------------------->
+Estudiante: Juan Rodriguez
+ Edad: 19 Años
+ Semestre: 1
+<-------------------------------------->
