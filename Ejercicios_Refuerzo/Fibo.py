@@ -3,7 +3,7 @@ user = int(
 fibo = 0
 for i in range(user):
     print(fibo)
+    a = fibo
     fibo = + 1
-    b = a + b
-    a = b
+    fibo = fibo + a
 print(fibo)
