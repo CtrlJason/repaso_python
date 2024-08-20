@@ -1,5 +1,9 @@
+import winsound
+
 #Variables
 ruta = "C:/Dev_Jason/repaso_python/POO/Ejercicios/estudiantes_registrados.txt"
+ruta_sonido_registro = "C:/Windows/Media/chimes.wav"
+ruta_sonido_cierre = "C:/Windows/Media/Windows Notify System Generic.wav"
 
 # Contructor para almacenar los datos
 class Estudiante(): # Este metodo constructor me verifica si el estudiante se ha regristrado
@@ -11,6 +15,7 @@ class Estudiante(): # Este metodo constructor me verifica si el estudiante se ha
         
     def estudiar(self):
         print(f"\nEl estudiante {self.nombre} {self.apellido} con la edad de {self.edad} años se encuentra cursando: {self.semestre} Semestre - INTER\n(+) Se ha registrado exisosamente")
+        winsound.PlaySound(ruta_sonido_registro, winsound.SND_FILENAME)
         # Guardado de los registros en un archivo TXT
         with open(ruta,"a",encoding="UTF-8") as arch_studens: # Se debe poner , "w" para que se cree y escriba el archivo
             # arch_studens.writelines("<-------------------------------------->\n") 
@@ -27,10 +32,10 @@ def programa_inscripcion_datos():
     user.estudiar()
 
 # Creacion del archivo TXT en caso de que no exista
-try: # try realiza una verificacion y si esta no se cumple pasa a la excepcion
+try: # try realiza una verificacion de un evento, en este caso el evento es que se leea el archivo, si el archivo existe el programa continua sino manda una excepcion
     with open(ruta, "r"):
         pass
-except FileNotFoundError: # en caso de que el programa llegue a except para que no se bloquee se agregan argumentos con el error en cuestion y asi el programa pueda continuar
+except FileNotFoundError: # en caso de que el programa llegue a except para que no se bloquee se agregan argumentos para que el programa pueda continuar
     with open(ruta, "w") as arch_studens:
         arch_studens.writelines("Estudiantes registrados en INTER:\n<-------------------------------------->\n")
 
@@ -41,7 +46,7 @@ while True:
         programa_inscripcion_datos()
     elif user_inicio == 2:
         print("\nPrograma de inscripcion finalizado")
+        winsound.PlaySound(ruta_sonido_cierre, winsound.SND_FILENAME)
         break
     else:
         print("\nOpcion no valida\n")
-        
