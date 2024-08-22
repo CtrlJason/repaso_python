@@ -1,7 +1,8 @@
-import winsound, os
+import winsound
+from pathlib import Path
 
-ruta_actual = os.path.dirname(os.path.abspath(__file__))
-ruta_archivo = os.path.join(ruta_actual, "estudiantes_registrados")
+# Se utiliza Path para trabajar con ubicaciones absolutas y relativas, en este caso relativas
+ruta_archivo = Path(__file__).parent/"estudiantes_registrados.txt" # En este caso se utiliza Path(__file__).parent/ para obtener la ubicacion de un archivo y viajar entre carpetas atravez de un "/"
 
 #Variables
 ruta_sonido_registro = "C:/Windows/Media/chimes.wav"
