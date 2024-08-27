@@ -1,0 +1,6 @@
+Estudiantes registrados en INTER:
+<-------------------------------------->
+Estudiante: Yeison Mosquera
+ Edad: 23 Años
+ Semestre: 4
+<-------------------------------------->

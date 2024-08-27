@@ -1,10 +1,1 @@
-Estudiantes registrados en INTER:
-<-------------------------------------->
-Estudiante: Yeison Mosquera
- Edad: 23 Años
- Semestre: 4
-<-------------------------------------->
-Estudiante: Juan Carlos
- Edad: 32 Años
- Semestre: 2
-<-------------------------------------->
+
