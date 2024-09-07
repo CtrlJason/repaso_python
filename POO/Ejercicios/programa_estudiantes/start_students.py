@@ -20,7 +20,7 @@ class Estudiante(): # Este metodo constructor me verifica si el estudiante se ha
         
     def estudiar(self):
         print(f"\nEl estudiante {self.nombre} {self.apellido} con la edad de {self.edad} años se encuentra cursando: {self.semestre} Semestre - INTER\n(+) Se ha registrado exisosamente")
-        winsound.PlaySound(ruta_sonido_registro, winsound.SND_FILENAME)
+        winsound.PlaySound(ruta_sonido_registro, winsound.SND_FILENAME) # Para ejecutar o iniciar el sonido
         # Guardado de los registros en un archivo TXT
         with open(ruta_archivo,"a",encoding="UTF-8") as arch_studens: # Se debe poner , "w" para que se cree y escriba el archivo
             # arch_studens.writelines("<-------------------------------------->\n") 
